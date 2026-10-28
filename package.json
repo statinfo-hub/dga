@@ -3,12 +3,30 @@
   "version": "1.0.0",
   "description": "ECOWAS Directors General of Statistics Annual Meeting website",
   "main": "server.js",
-  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
-  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "express": "^4.21.2",
     "helmet": "^8.0.0",
     "express-rate-limit": "^7.5.0",
     "multer": "^1.4.5-lts.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/statinfo-hub/dga.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/statinfo-hub/dga/issues"
+  },
+  "homepage": "https://github.com/statinfo-hub/dga#readme"
 }

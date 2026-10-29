@@ -1,12 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Multi-language Page</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 40px; }
-    select { padding: 8px; margin-bottom: 20px; }
-  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Directors General of Statistics Annual Meeting — 16–20 November 2026, Monrovia, Liberia.">
@@ -16,42 +10,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Language Selector -->
-  <label for="language">Choose Language:</label>
-  <select id="language">
-    <option value="en">English</option>
-    <option value="fr">Français</option>
-    <option value="pt">Português</option>
-  </select>
-
-  <!-- Content -->
-  <h1 id="title">Welcome</h1>
-  <p id="description">Please register for the event.</p>
-
-  <script>
-    // Translation dictionary
-    const translations = {
-      en: {
-        title: "Welcome",
-        description: "Please register for the event."
-      },
-      fr: {
-        title: "Bienvenue",
-        description: "Veuillez vous inscrire à l'événement."
-      },
-      pt: {
-        title: "Bem-vindo",
-        description: "Por favor, registre-se para o evento."
-      }
-    };
-
-    // Handle language change
-    document.getElementById('language').addEventListener('change', function() {
-      const lang = this.value;
-      document.getElementById('title').textContent = translations[lang].title;
-      document.getElementById('description').textContent = translations[lang].description;
-    });
-  </script>
   <header class="topbar">
     <a class="brand" href="#home" aria-label="ECOWAS Statistics Meeting home">
       <!--<span class="logo" aria-hidden="true">E</span>-->

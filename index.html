@@ -159,6 +159,20 @@
     </section>
   </main>
 
+  <script>
+  const translations = {
+    en: { title: "Welcome", description: "Please register for the event." },
+    fr: { title: "Bienvenue", description: "Veuillez vous inscrire à l'événement." },
+    pt: { title: "Bem-vindo", description: "Por favor, registre-se para o evento." }
+  };
+
+  document.getElementById('language').addEventListener('change', function() {
+    const lang = this.value;
+    document.getElementById('title').textContent = translations[lang].title;
+    document.getElementById('description').textContent = translations[lang].description;
+  });
+</script>
+
   <footer><div class="footer-links"><a href="mailto:info@example.org">Contact Us</a><a href="#news">FAQ</a><a href="#privacy">Privacy Policy</a><span>© 2026 ECOWAS Commission</span></div></footer>
   <dialog id="notice-dialog"><p id="notice-text"></p><button class="btn" id="notice-close">Close</button></dialog>
   <script src="/app.js" defer></script>
